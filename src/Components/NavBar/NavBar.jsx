@@ -14,7 +14,7 @@ const NavBar = () => {
 
       
     return (
-        <nav>
+        <nav className="bg-indigo-100 p-4">
             <div className="md:hidden" onClick={() => setOpen(!open)}>
                 {
                     open === true ? 
@@ -23,7 +23,10 @@ const NavBar = () => {
                 }
                 
             </div>
-            <ul className="md:flex gap-20">
+            <ul className={`md:flex duration-1000 gap-20 absolute md:static
+            ${open ? 'top-16' : '-top-60'}
+            bg-indigo-100 px-3 py-1
+            `}>
                {
                 routes.map(route => <Link key={route.id} route={route}></Link>)
             } 

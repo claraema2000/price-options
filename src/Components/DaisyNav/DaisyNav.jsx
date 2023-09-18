@@ -1,6 +1,6 @@
 const DaisyNav = () => {
     return (
-        <div className="navbar bg-indigo-100">
+        <div className="navbar bg-red-100">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
