@@ -4,13 +4,13 @@ import Feature from '../Feature/Feature';
 const PriceOption = ({ option }) => {
     const { name, price, features } = option;
     return (
-        <div className='bg-indigo-200 rounded-md p-6 text-center'>
+        <div className='bg-indigo-200 rounded-md p-6 text-center flex flex-col'>
             <h3 className='text-3xl font-semibold'>{name}</h3>
             <h3 className='my-5'>
                 <span className='text-4xl font-extrabold'>{price}</span>
                 <span className='text-xl font-semibold'>$/month</span>
             </h3>
-            <div>
+            <div className='flex-grow'>
                 {
                     features.map((feature, index) => <Feature key={index} feature={feature}></Feature>)
                 }
