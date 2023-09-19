@@ -14,7 +14,7 @@ const NavBar = () => {
 
       
     return (
-        <nav className="bg-indigo-100 p-4">
+        <nav className="bg-indigo-100 p-4 mt-14">
             <div className="md:hidden" onClick={() => setOpen(!open)}>
                 {
                     open === true ? 
@@ -23,6 +23,7 @@ const NavBar = () => {
                 }
                 
             </div>
+            {/* Way of responsive in small device */}
             <ul className={`md:flex duration-1000 gap-20 absolute md:static
             ${open ? 'top-16' : '-top-60'}
             bg-indigo-100 px-3 py-1
