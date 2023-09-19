@@ -15,7 +15,7 @@ const PriceOption = ({ option }) => {
                     features.map((feature, index) => <Feature key={index} feature={feature}></Feature>)
                 }
             </div>
-            <button className='mt-10 py-2 w-full bg-indigo-800 text-white font-bold rounded-md hover:bg-indigo-950'>Buy Now</button>
+            <button className='mt-10 py-2 w-full bg-indigo-700 text-white font-bold rounded-md hover:bg-indigo-900'>Buy Now</button>
         </div>
     );
 };

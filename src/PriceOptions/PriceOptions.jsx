@@ -43,7 +43,7 @@ const PriceOptions = () => {
 
 
   return (
-    <div className=" mx-10">
+    <div className=" mx-10 mb-10">
       <h2 className="text-5xl font-semibold my-16">Best  Prices in The Town</h2>
       <div className='grid md:grid-cols-3 gap-10'>
         {
